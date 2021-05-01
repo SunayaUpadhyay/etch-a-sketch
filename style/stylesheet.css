@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#div-container {
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: grid;
+    box-shadow: 25px 25px black;
+    border-radius: 3px;
+}
+
+
+
+.div-block {
+    border: 0.5px solid rgba(53, 53, 53, 0.067);
+}
+
+#main {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#controls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 65px;
+}
+
+.button {
+    border: none;
+    padding: 15px;
+    margin: 15px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(42, 119, 163);
+    color: rgb(217, 234, 243);
+    border-radius: 3px;
+    transition-property: all;
+    transition-duration: 2ms;
+    line-height: 20px;
+    box-shadow: 8px 5px rgb(38, 172, 172);
+}
+
+#slider {
+    
+    margin: 30px 10px;
+    color:rgb(1, 66, 104)
+}
+
+#header {
+    padding: 10px 0 0 0;
+    margin: 20px 0 0 0; 
+}
+
+.button-selected {
+    font-size: 18px;
+    color: rgb(243, 248, 250);
+    box-shadow: 10px 8px rgb(90, 228, 228);
+}
+
+#clear:active {
+    font-size: 18px;
+    color: rgb(243, 248, 250);
+    box-shadow: 10px 8px rgb(78, 218, 218);
+}
+
+h1 {
+    text-shadow: 4px 4px rgb(113, 221, 221);
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(27, 100, 143);
+}
