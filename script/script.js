@@ -5,6 +5,7 @@ const slider = document.getElementById("grid-num");
 const clearButton = document.getElementById("clear");
 const colorfulButton = document.getElementById("colorful");
 const sliderLabel = document.getElementById("slider-label")
+const CONTAINER_SIZE = 600;
 
 //================================//
 
@@ -21,8 +22,10 @@ function createDiv(gridNum) {
     let container = document.createElement("div");
     container.setAttribute("id", "div-container");
     container.setAttribute("ondragstart", "return false;");
-    container.style.cssText = `grid-template-columns: repeat(${gridNum}, 1fr);
-                               grid-template-rows: repeat(${gridNum}, 1fr)`
+    container.style.cssText = `grid-template-columns: repeat(${gridNum}, ${CONTAINER_SIZE/gridNum}px);
+                               grid-template-rows: repeat(${gridNum}, ${CONTAINER_SIZE/gridNum}px);
+                               width: ${CONTAINER_SIZE + 4.5}px;
+                               height: ${CONTAINER_SIZE + 4.5}px;`
     for (let j = 0; j < gridNum; j++) {
         for (let i = 0; i < gridNum; i++) {
             let div = document.createElement("div")
